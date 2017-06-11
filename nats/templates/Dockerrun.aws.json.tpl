@@ -5,8 +5,8 @@
     "Update": "true"
   },
   "Ports": [
-    { "ContainerPort":"4222 },
-    { "ContainerPort":"6222" },
-    { "ContainerPort":"8222" }
+    { "ContainerPort":"8222" },
+    { "ContainerPort":"4222" },
+    { "ContainerPort":"6222" }
   ]
 }

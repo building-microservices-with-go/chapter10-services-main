@@ -25,7 +25,7 @@ module "nats" {
   docker_tag          = "latest"
 
   elb_scheme   = "internal"
-  health_check = "/health"
+  health_check = "/varz"
 
   vpc_id  = "${module.vpc.id}"
   subnets = ["${module.vpc.subnets}"]
