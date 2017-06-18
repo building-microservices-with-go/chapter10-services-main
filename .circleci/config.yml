@@ -10,7 +10,7 @@ defaults: &defaults
 
 version: 2
 jobs:
-  deploy:
+  build:
     <<: *defaults
     
     steps:
@@ -24,18 +24,12 @@ jobs:
             
       - run:
           name: Initialize Terraform
-          command: |
-            cd terraform
-            terraform init
+          command: terraform init
             
       - run:
           name: Terraform Plan
-          command: |
-            cd terraform
-            terraform plan -out=main.terraform
+          command: terraform plan -out=main.terraform
 
       - deploy:
           name: Deploy to AWS with Terraform
-          command: |
-            cd terraform
-            terraform apply main.terraform
+          command: terraform apply main.terraform
