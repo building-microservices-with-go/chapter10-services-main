@@ -10,7 +10,7 @@ defaults: &defaults
 
 version: 2
 jobs:
-  deploy:
+  build:
     <<: *defaults
     
     steps:
