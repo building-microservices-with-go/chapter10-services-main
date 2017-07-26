@@ -1,3 +1,3 @@
-namespace = "chapter11-bog"
+namespace = "chapter10-bog"
 
 public_key = "~/.ssh/server_rsa.pub"
