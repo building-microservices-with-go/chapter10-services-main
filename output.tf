@@ -1,5 +1,5 @@
-output "nats_cname" {
-  value = "${module.nats.cname}"
+output "ssh_host" {
+  value = "${module.ssh.ssh_host}"
 }
 
 output "deployment_bucket" {
@@ -15,9 +15,5 @@ output "vpc_id" {
 }
 
 output "vpc_subnets" {
-  value = ["${module.vpc.subnets}"]
-}
-
-output "vpc_subnet_names" {
-  value = ["${module.vpc.subnet_names}"]
+  value = "${module.vpc.subnets}"
 }

@@ -33,3 +33,7 @@ jobs:
       - deploy:
           name: Deploy to AWS with Terraform
           command: terraform apply main.terraform
+      
+    filters:
+      branches:
+        only: master
